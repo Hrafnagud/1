@@ -12,13 +12,13 @@ using System.Xml.Serialization;
 
 namespace FirstWindowsFormsApp
 {
-    public partial class Form3 : Form
+    public partial class FormStudentAdd : Form
     {
         List<string> ClassList = new List<string>() { "Section A", "Section B " };
         List<Student> ClassAStudents = new List<Student>();
         List<Student> ClassBStudents = new List<Student>();
         List<string> ChoosenElectives = new List<string>();
-        public Form3()
+        public FormStudentAdd()
         {
             InitializeComponent();
             //comboClassSelection.Items.AddRange(SectionList.ToArray());
@@ -282,7 +282,7 @@ namespace FirstWindowsFormsApp
 
         private void importXMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Existing XML document will be important. Another dialogue object.
+            //Existing XML document will be imported. Another dialogue object.
 
             CleanControls();
             openFileDialog1.Title = "Choose an XML file";

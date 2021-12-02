@@ -1,7 +1,7 @@
 ﻿
 namespace FirstWindowsFormsApp
 {
-    partial class Form3
+    partial class FormStudentAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,9 @@ namespace FirstWindowsFormsApp
             this.buttonAddStudent = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.operationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.comboClassSelection = new System.Windows.Forms.ComboBox();
@@ -51,9 +54,6 @@ namespace FirstWindowsFormsApp
             this.checkBoxElectivePrompt = new System.Windows.Forms.CheckBox();
             this.groupboxElectiveLectures = new System.Windows.Forms.GroupBox();
             this.checkedListLectureSelection = new System.Windows.Forms.CheckedListBox();
-            this.xMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
@@ -64,76 +64,81 @@ namespace FirstWindowsFormsApp
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(19, 34);
+            this.labelName.Location = new System.Drawing.Point(17, 26);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(49, 20);
+            this.labelName.Size = new System.Drawing.Size(39, 15);
             this.labelName.TabIndex = 0;
             this.labelName.Text = "Name";
             // 
             // labelSurname
             // 
             this.labelSurname.AutoSize = true;
-            this.labelSurname.Location = new System.Drawing.Point(19, 74);
+            this.labelSurname.Location = new System.Drawing.Point(17, 56);
             this.labelSurname.Name = "labelSurname";
-            this.labelSurname.Size = new System.Drawing.Size(67, 20);
+            this.labelSurname.Size = new System.Drawing.Size(54, 15);
             this.labelSurname.TabIndex = 1;
             this.labelSurname.Text = "Surname";
             // 
             // labelDateOfBirth
             // 
             this.labelDateOfBirth.AutoSize = true;
-            this.labelDateOfBirth.Location = new System.Drawing.Point(19, 118);
+            this.labelDateOfBirth.Location = new System.Drawing.Point(17, 88);
             this.labelDateOfBirth.Name = "labelDateOfBirth";
-            this.labelDateOfBirth.Size = new System.Drawing.Size(94, 20);
+            this.labelDateOfBirth.Size = new System.Drawing.Size(73, 15);
             this.labelDateOfBirth.TabIndex = 2;
             this.labelDateOfBirth.Text = "Date of Birth";
             // 
             // labelClassSelection
             // 
             this.labelClassSelection.AutoSize = true;
-            this.labelClassSelection.Location = new System.Drawing.Point(19, 159);
+            this.labelClassSelection.Location = new System.Drawing.Point(17, 119);
             this.labelClassSelection.Name = "labelClassSelection";
-            this.labelClassSelection.Size = new System.Drawing.Size(107, 20);
+            this.labelClassSelection.Size = new System.Drawing.Size(85, 15);
             this.labelClassSelection.TabIndex = 3;
             this.labelClassSelection.Text = "Class Selection";
             // 
             // listBoxClassA
             // 
             this.listBoxClassA.FormattingEnabled = true;
-            this.listBoxClassA.ItemHeight = 20;
-            this.listBoxClassA.Location = new System.Drawing.Point(12, 379);
+            this.listBoxClassA.ItemHeight = 15;
+            this.listBoxClassA.Location = new System.Drawing.Point(10, 284);
+            this.listBoxClassA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxClassA.Name = "listBoxClassA";
-            this.listBoxClassA.Size = new System.Drawing.Size(284, 224);
+            this.listBoxClassA.Size = new System.Drawing.Size(249, 169);
             this.listBoxClassA.TabIndex = 4;
             // 
             // textSurname
             // 
-            this.textSurname.Location = new System.Drawing.Point(146, 74);
+            this.textSurname.Location = new System.Drawing.Point(128, 56);
+            this.textSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textSurname.Name = "textSurname";
-            this.textSurname.Size = new System.Drawing.Size(257, 27);
+            this.textSurname.Size = new System.Drawing.Size(225, 23);
             this.textSurname.TabIndex = 7;
             // 
             // textName
             // 
-            this.textName.Location = new System.Drawing.Point(146, 34);
+            this.textName.Location = new System.Drawing.Point(128, 26);
+            this.textName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(257, 27);
+            this.textName.Size = new System.Drawing.Size(225, 23);
             this.textName.TabIndex = 8;
             // 
             // listBoxClassB
             // 
             this.listBoxClassB.FormattingEnabled = true;
-            this.listBoxClassB.ItemHeight = 20;
-            this.listBoxClassB.Location = new System.Drawing.Point(480, 379);
+            this.listBoxClassB.ItemHeight = 15;
+            this.listBoxClassB.Location = new System.Drawing.Point(420, 284);
+            this.listBoxClassB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxClassB.Name = "listBoxClassB";
-            this.listBoxClassB.Size = new System.Drawing.Size(315, 224);
+            this.listBoxClassB.Size = new System.Drawing.Size(276, 169);
             this.listBoxClassB.TabIndex = 9;
             // 
             // buttonAddRight
             // 
-            this.buttonAddRight.Location = new System.Drawing.Point(348, 407);
+            this.buttonAddRight.Location = new System.Drawing.Point(304, 305);
+            this.buttonAddRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddRight.Name = "buttonAddRight";
-            this.buttonAddRight.Size = new System.Drawing.Size(80, 39);
+            this.buttonAddRight.Size = new System.Drawing.Size(70, 29);
             this.buttonAddRight.TabIndex = 12;
             this.buttonAddRight.Text = ">";
             this.buttonAddRight.UseVisualStyleBackColor = true;
@@ -141,9 +146,10 @@ namespace FirstWindowsFormsApp
             // 
             // buttonAddAllRight
             // 
-            this.buttonAddAllRight.Location = new System.Drawing.Point(348, 452);
+            this.buttonAddAllRight.Location = new System.Drawing.Point(304, 339);
+            this.buttonAddAllRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddAllRight.Name = "buttonAddAllRight";
-            this.buttonAddAllRight.Size = new System.Drawing.Size(80, 42);
+            this.buttonAddAllRight.Size = new System.Drawing.Size(70, 32);
             this.buttonAddAllRight.TabIndex = 13;
             this.buttonAddAllRight.Text = ">>";
             this.buttonAddAllRight.UseVisualStyleBackColor = true;
@@ -151,9 +157,10 @@ namespace FirstWindowsFormsApp
             // 
             // buttonAddLeft
             // 
-            this.buttonAddLeft.Location = new System.Drawing.Point(348, 500);
+            this.buttonAddLeft.Location = new System.Drawing.Point(304, 375);
+            this.buttonAddLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddLeft.Name = "buttonAddLeft";
-            this.buttonAddLeft.Size = new System.Drawing.Size(80, 39);
+            this.buttonAddLeft.Size = new System.Drawing.Size(70, 29);
             this.buttonAddLeft.TabIndex = 14;
             this.buttonAddLeft.Text = "<";
             this.buttonAddLeft.UseVisualStyleBackColor = true;
@@ -161,9 +168,10 @@ namespace FirstWindowsFormsApp
             // 
             // buttonAddAllLeft
             // 
-            this.buttonAddAllLeft.Location = new System.Drawing.Point(348, 545);
+            this.buttonAddAllLeft.Location = new System.Drawing.Point(304, 409);
+            this.buttonAddAllLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddAllLeft.Name = "buttonAddAllLeft";
-            this.buttonAddAllLeft.Size = new System.Drawing.Size(80, 41);
+            this.buttonAddAllLeft.Size = new System.Drawing.Size(70, 31);
             this.buttonAddAllLeft.TabIndex = 15;
             this.buttonAddAllLeft.Text = "<<";
             this.buttonAddAllLeft.UseVisualStyleBackColor = true;
@@ -171,9 +179,10 @@ namespace FirstWindowsFormsApp
             // 
             // buttonAddStudent
             // 
-            this.buttonAddStudent.Location = new System.Drawing.Point(431, 34);
+            this.buttonAddStudent.Location = new System.Drawing.Point(377, 26);
+            this.buttonAddStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddStudent.Name = "buttonAddStudent";
-            this.buttonAddStudent.Size = new System.Drawing.Size(119, 150);
+            this.buttonAddStudent.Size = new System.Drawing.Size(104, 112);
             this.buttonAddStudent.TabIndex = 16;
             this.buttonAddStudent.Text = "ADD STUDENT";
             this.buttonAddStudent.UseVisualStyleBackColor = true;
@@ -187,7 +196,8 @@ namespace FirstWindowsFormsApp
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(934, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(817, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -196,30 +206,55 @@ namespace FirstWindowsFormsApp
             this.operationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.xMLToolStripMenuItem});
             this.operationsToolStripMenuItem.Name = "operationsToolStripMenuItem";
-            this.operationsToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.operationsToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.operationsToolStripMenuItem.Text = "Operations";
+            // 
+            // xMLToolStripMenuItem
+            // 
+            this.xMLToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportXMLToolStripMenuItem,
+            this.importXMLToolStripMenuItem});
+            this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
+            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.xMLToolStripMenuItem.Text = "XML";
+            // 
+            // exportXMLToolStripMenuItem
+            // 
+            this.exportXMLToolStripMenuItem.Name = "exportXMLToolStripMenuItem";
+            this.exportXMLToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.exportXMLToolStripMenuItem.Text = "Export XML";
+            this.exportXMLToolStripMenuItem.Click += new System.EventHandler(this.exportXMLToolStripMenuItem_Click);
+            // 
+            // importXMLToolStripMenuItem
+            // 
+            this.importXMLToolStripMenuItem.Name = "importXMLToolStripMenuItem";
+            this.importXMLToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.importXMLToolStripMenuItem.Text = "Import XML";
+            this.importXMLToolStripMenuItem.Click += new System.EventHandler(this.importXMLToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // dateTimePicker
             // 
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker.Location = new System.Drawing.Point(146, 118);
+            this.dateTimePicker.Location = new System.Drawing.Point(128, 88);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(257, 27);
+            this.dateTimePicker.Size = new System.Drawing.Size(225, 23);
             this.dateTimePicker.TabIndex = 18;
             // 
             // comboClassSelection
             // 
             this.comboClassSelection.FormattingEnabled = true;
-            this.comboClassSelection.Location = new System.Drawing.Point(146, 156);
+            this.comboClassSelection.Location = new System.Drawing.Point(128, 117);
+            this.comboClassSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboClassSelection.Name = "comboClassSelection";
-            this.comboClassSelection.Size = new System.Drawing.Size(257, 28);
+            this.comboClassSelection.Size = new System.Drawing.Size(225, 23);
             this.comboClassSelection.TabIndex = 19;
             this.comboClassSelection.Text = "Select your class section..";
             // 
@@ -235,9 +270,11 @@ namespace FirstWindowsFormsApp
             this.groupboxStudentInfo.Controls.Add(this.labelClassSelection);
             this.groupboxStudentInfo.Controls.Add(this.textSurname);
             this.groupboxStudentInfo.Controls.Add(this.textName);
-            this.groupboxStudentInfo.Location = new System.Drawing.Point(15, 31);
+            this.groupboxStudentInfo.Location = new System.Drawing.Point(13, 23);
+            this.groupboxStudentInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupboxStudentInfo.Name = "groupboxStudentInfo";
-            this.groupboxStudentInfo.Size = new System.Drawing.Size(581, 285);
+            this.groupboxStudentInfo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupboxStudentInfo.Size = new System.Drawing.Size(508, 214);
             this.groupboxStudentInfo.TabIndex = 20;
             this.groupboxStudentInfo.TabStop = false;
             this.groupboxStudentInfo.Text = "Student Information";
@@ -246,9 +283,10 @@ namespace FirstWindowsFormsApp
             // 
             this.checkBoxElectivePrompt.AutoSize = true;
             this.checkBoxElectivePrompt.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxElectivePrompt.Location = new System.Drawing.Point(102, 225);
+            this.checkBoxElectivePrompt.Location = new System.Drawing.Point(89, 169);
+            this.checkBoxElectivePrompt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxElectivePrompt.Name = "checkBoxElectivePrompt";
-            this.checkBoxElectivePrompt.Size = new System.Drawing.Size(360, 24);
+            this.checkBoxElectivePrompt.Size = new System.Drawing.Size(290, 19);
             this.checkBoxElectivePrompt.TabIndex = 21;
             this.checkBoxElectivePrompt.Text = "Would you like to enroll for an elective lecture?";
             this.checkBoxElectivePrompt.UseVisualStyleBackColor = true;
@@ -257,9 +295,11 @@ namespace FirstWindowsFormsApp
             // groupboxElectiveLectures
             // 
             this.groupboxElectiveLectures.Controls.Add(this.checkedListLectureSelection);
-            this.groupboxElectiveLectures.Location = new System.Drawing.Point(672, 31);
+            this.groupboxElectiveLectures.Location = new System.Drawing.Point(588, 23);
+            this.groupboxElectiveLectures.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupboxElectiveLectures.Name = "groupboxElectiveLectures";
-            this.groupboxElectiveLectures.Size = new System.Drawing.Size(250, 285);
+            this.groupboxElectiveLectures.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupboxElectiveLectures.Size = new System.Drawing.Size(219, 214);
             this.groupboxElectiveLectures.TabIndex = 20;
             this.groupboxElectiveLectures.TabStop = false;
             this.groupboxElectiveLectures.Text = "Elevtive Lectures";
@@ -273,44 +313,22 @@ namespace FirstWindowsFormsApp
             "Italian",
             "Citizen Health",
             "Evolution"});
-            this.checkedListLectureSelection.Location = new System.Drawing.Point(0, 31);
+            this.checkedListLectureSelection.Location = new System.Drawing.Point(0, 23);
+            this.checkedListLectureSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkedListLectureSelection.Name = "checkedListLectureSelection";
-            this.checkedListLectureSelection.Size = new System.Drawing.Size(250, 246);
+            this.checkedListLectureSelection.Size = new System.Drawing.Size(219, 184);
             this.checkedListLectureSelection.TabIndex = 21;
             this.checkedListLectureSelection.SelectedIndexChanged += new System.EventHandler(this.checkedListLectureSelection_SelectedIndexChanged);
-            // 
-            // xMLToolStripMenuItem
-            // 
-            this.xMLToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exportXMLToolStripMenuItem,
-            this.importXMLToolStripMenuItem});
-            this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
-            this.xMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.xMLToolStripMenuItem.Text = "XML";
-            // 
-            // exportXMLToolStripMenuItem
-            // 
-            this.exportXMLToolStripMenuItem.Name = "exportXMLToolStripMenuItem";
-            this.exportXMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.exportXMLToolStripMenuItem.Text = "Export XML";
-            this.exportXMLToolStripMenuItem.Click += new System.EventHandler(this.exportXMLToolStripMenuItem_Click);
-            // 
-            // importXMLToolStripMenuItem
-            // 
-            this.importXMLToolStripMenuItem.Name = "importXMLToolStripMenuItem";
-            this.importXMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.importXMLToolStripMenuItem.Text = "Import XML";
-            this.importXMLToolStripMenuItem.Click += new System.EventHandler(this.importXMLToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Form3
+            // FormStudentAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 719);
+            this.ClientSize = new System.Drawing.Size(817, 539);
             this.Controls.Add(this.groupboxElectiveLectures);
             this.Controls.Add(this.groupboxStudentInfo);
             this.Controls.Add(this.buttonAddAllLeft);
@@ -320,8 +338,9 @@ namespace FirstWindowsFormsApp
             this.Controls.Add(this.listBoxClassB);
             this.Controls.Add(this.listBoxClassA);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FormStudentAdd";
+            this.Text = "Student Enrollment Form";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupboxStudentInfo.ResumeLayout(false);
