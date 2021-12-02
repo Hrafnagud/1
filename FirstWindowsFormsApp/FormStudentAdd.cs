@@ -271,7 +271,7 @@ namespace FirstWindowsFormsApp
                 //Serialize XML. //Using System.Xml.Serialization;
                 XmlSerializer myXMLSerializer = new XmlSerializer(typeof(List<Student>));
                 //using block: handles the resource and performs additional closing operations after use, automatically.
-                //IDisposable deriven classes required. Disposing with Garbage Collector.
+                //IDisposable derived classes required. Disposing with Garbage Collector.
                 using (TextWriter writer = new StreamWriter(saveFileDialog1.FileName))  //Include, using System.IO;
                 {
                     myXMLSerializer.Serialize(writer, StudentsToExport);
